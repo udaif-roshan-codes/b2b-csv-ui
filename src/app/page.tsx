@@ -34,9 +34,17 @@ export default function CsvUploadPage() {
   return (
     <Box padding="lg" className="max-w-5xl mx-auto">
       <Stack gap="lg">
-        <Stack gap="xs">
-          <Text size="xl" weight="bold">Import Billing Data</Text>
-          <Text tone="muted">Upload a CSV file to import invoice or billing information.</Text>
+        <Stack direction="horizontal" className="w-full flex justify-between">
+          <Stack gap="xs">
+            <Text size="xl" weight="bold">Import Billing Data</Text>
+            <Text tone="muted">Upload a CSV file to import invoice or billing information.</Text>
+          </Stack>
+          <Button
+            variant="secondary"
+            onClick={() => window.location.href = "/showcase"}
+          >
+            View Components
+          </Button>
         </Stack>
 
         <Card>
